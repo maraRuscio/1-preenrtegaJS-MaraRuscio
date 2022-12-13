@@ -16,10 +16,10 @@ function mensajeEnsayo (cont, vMax ) {
 // -------------- comienza mi programa -------------- //
 
 for( let i = 1; i < 4; i++){ 
-let ingresarUsario = prompt("Para ingresar el usuario debe ser 'covid'. Ingrese su usuario");
+let ingresarUsario = prompt("Para ingresar el usuario debe ser 'covid'. Ingrese su usuario").toLowerCase();
 if(ingresarUsario == "covid")
 {
-    let opcion = prompt("¿Quiere verificar un resultado de ensayo? (si, para cargar dato)");
+    let opcion = prompt("¿Quiere verificar un resultado de ensayo? (si, para cargar dato)").toLowerCase();
 
     while(opcion == "si" ){
         let tipoEnsayo = parseInt(prompt("¿Qué esnayo desea verificar?. 1 = Ensayo de contacto de superficie  2 = Placas ambientales.")); 
@@ -39,7 +39,7 @@ if(ingresarUsario == "covid")
                 alert ("la opción  ingresada no es valida. Ingrese 1 o 2 segun el ensayo que desea verificar");
                 break;
         }
-        opcion = prompt("¿Quiere verificar un resultado de ensayo?(si, para cargar dato)");
+        opcion = prompt("¿Quiere verificar un resultado de ensayo?(si, para cargar dato)").toLowerCase();
     }
     alert ("Se ingreso una respuesta diferente a 'si'. Cuando necesite verificar otro ensayo por favor vuelva a logearse. Saludos!")
     break;
